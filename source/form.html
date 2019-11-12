@@ -46,88 +46,88 @@
         <h2 class="common-section__title">Оставьте свой отзыв</h2>
         <p class="common-section__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
           Вами достопримечательностях</p>
-
-        <form class="form" method="POST" action="https://echo.htmlacademy.ru">
-
-          <fieldset class="form__group">
-            <legend class="form__group-title">Представьтесь:</legend>
-            <div class="textbox">
-              <label class="textbox__label" for="firstname">Имя<sup>*</sup>:</label>
-              <input class="textbox__input" type="text" name="firstname" id="firstname" placeholder="Петр" required>
-            </div>
-            <div class="textbox">
-              <label class="textbox__label" for="lastname">Фамилия<sup>*</sup>:</label>
-              <input class="textbox__input" type="text" name="lastname" id="lastname" placeholder="Иванов" required>
-            </div>
-            <div class="textbox">
-              <label class="textbox__label" for="middlename">Отчество<sup>*</sup>:</label>
-              <input class="textbox__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
-            </div>
-          </fieldset>
-
-          <fieldset class="form__group">
-            <legend class="form__group-title">Контактная информация:</legend>
-            <div class="textbox textbox--contact">
-              <label class="textbox__label textbox__label--contact" for="phone">Контактный телефон<sup>*</sup>:</label>
-              <input class="textbox__input textbox__input--contact" type="tel" name="phone" id="phone"
-                placeholder="Введите телефон" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
-            </div>
-            <div class="textbox textbox--contact">
-              <label class="textbox__label textbox__label--contact" for="email">Электронная почта<sup>*</sup>:</label>
-              <input class="textbox__input textbox__input--contact" type="email" name="email" id="email"
-                placeholder="Введите e-mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
-            </div>
-          </fieldset>
-
-          <fieldset class="form__group">
-            <legend class="form__group-title">Ваше общее впечатление:</legend>
-            <div class="radio">
-              <label class="radio__label" for="feeling-good">Скорее положительные</label>
-              <input class="radio__input" type="radio" name="feeling" id="feeling-good" value="feeling3" checked>
-            </div>
-            <div class="radio">
-              <label class="radio__label" for="feeling-bad">Скорее отрицательное</label>
-              <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2">
-            </div>
-            <div class="radio">
-              <label class="radio__label" for="feeling-notsure">Затрудняюсь ответить</label>
-              <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling1">
-            </div>
-          </fieldset>
-
-          <fieldset class="form__group">
-            <legend class="form__group-title">Посещенные достопримечательности:</legend>
-            <div class="checkbox__item">
-              <label class="checkbox__label" for="devilbridge">Мост Дьявола</label>
-              <input class="checkbox__input" type="checkbox" name="devilbridge" id="devilbridge" checked>
-            </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label" for="bellmountain">Гора-Колокол</label>
-              <input class="checkbox__input" type="checkbox" name="bellmountain" id="bellmountain" checked>
-            </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label" for="slidepark">Слайд-парк</label>
-              <input class="checkbox__input" type="checkbox" name="slidepark" id="slidepark" checked>
-            </div>
-            <div class="checkbox__item">
-              <label class="checkbox__label" for="redrocks">Красные скалы</label>
-              <input class="checkbox__input" type="checkbox" name="redrocks" id="redrocks">
-            </div>
-          </fieldset>
-
-          <fieldset class="form__group">
-            <legend class="form__group-title">Опишите свои эмоции:</legend>
-            <textarea class="form_submit" name="feedback" id="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
-
-          <fieldset class="form__group">
-            <div class="form_submit-wrapper">
-              <input class="form_submit" type="submit" value="Отправить отзыв">
-            </div>
-          </fieldset>
-
-        </form>
       </section>
+
+      <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__group">
+          <legend class="form__group-title">Представьтесь:</legend>
+          <div class="textbox">
+            <label class="textbox__label" for="firstname">Имя<sup>*</sup>:</label>
+            <input class="textbox__input" type="text" name="firstname" id="firstname" placeholder="Петр" required>
+          </div>
+          <div class="textbox">
+            <label class="textbox__label" for="lastname">Фамилия<sup>*</sup>:</label>
+            <input class="textbox__input" type="text" name="lastname" id="lastname" placeholder="Иванов" required>
+          </div>
+          <div class="textbox">
+            <label class="textbox__label" for="middlename">Отчество<sup>*</sup>:</label>
+            <input class="textbox__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group-title">Контактная информация:</legend>
+          <div class="textbox textbox--contact">
+            <label class="textbox__label textbox__label--contact" for="phone">Контактный телефон<sup>*</sup>:</label>
+            <input class="textbox__input textbox__input--contact" type="tel" name="phone" id="phone"
+              placeholder="Введите телефон" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+          </div>
+          <div class="textbox textbox--contact">
+            <label class="textbox__label textbox__label--contact" for="email">Электронная почта<sup>*</sup>:</label>
+            <input class="textbox__input textbox__input--contact" type="email" name="email" id="email"
+              placeholder="Введите e-mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group-title">Ваше общее впечатление:</legend>
+          <div class="radio">
+            <label class="radio__label" for="feeling-good">Скорее положительные</label>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-good" value="feeling3" checked>
+          </div>
+          <div class="radio">
+            <label class="radio__label" for="feeling-bad">Скорее отрицательное</label>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2">
+          </div>
+          <div class="radio">
+            <label class="radio__label" for="feeling-notsure">Затрудняюсь ответить</label>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling1">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group-title">Посещенные достопримечательности:</legend>
+          <div class="checkbox__item">
+            <label class="checkbox__label" for="devilbridge">Мост Дьявола</label>
+            <input class="checkbox__input" type="checkbox" name="devilbridge" id="devilbridge" checked>
+          </div>
+          <div class="checkbox__item">
+            <label class="checkbox__label" for="bellmountain">Гора-Колокол</label>
+            <input class="checkbox__input" type="checkbox" name="bellmountain" id="bellmountain" checked>
+          </div>
+          <div class="checkbox__item">
+            <label class="checkbox__label" for="slidepark">Слайд-парк</label>
+            <input class="checkbox__input" type="checkbox" name="slidepark" id="slidepark" checked>
+          </div>
+          <div class="checkbox__item">
+            <label class="checkbox__label" for="redrocks">Красные скалы</label>
+            <input class="checkbox__input" type="checkbox" name="redrocks" id="redrocks">
+          </div>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <legend class="form__group-title">Опишите свои эмоции:</legend>
+          <textarea class="form_submit" name="feedback" id="feedback"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <div class="form_submit-wrapper">
+            <input class="form_submit" type="submit" value="Отправить отзыв">
+          </div>
+        </fieldset>
+      </form>
+
     </main>
 
     <footer class="footer">
