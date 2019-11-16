@@ -1,12 +1,14 @@
 @import "page-wrapper.less";
 @import "main-nav.less";
 @import "intro.less";
+@import "common-section.less";
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: lighter;
+  text-transform: uppercase;
+  font-family: 'PTSans-Regular', sans-serif;
 }
 
 .visually-hidden {
@@ -16,4 +18,17 @@ body {
   height: 1px;
   margin: -1px;
 }
+
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../fonts/ptsans.woff2') format('woff2'),
+       url('../fonts/ptsans.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../fonts/ptsansbold.woff2') format('woff2'),
+       url('../fonts/ptsansbold.woff') format('woff')
+}
+
 
