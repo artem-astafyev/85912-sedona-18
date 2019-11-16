@@ -3,6 +3,10 @@
 @border-top: #9ac2db;
 @border-bottom: #678fa8;
 
+.z-index(@z-index){
+  z-index: @z-index;
+}
+
 .main-nav {
   position: relative;
   display: block;
@@ -39,6 +43,7 @@
   height: 22px;
   background: url('../img/icon-menu.svg') no-repeat 50% 50%;
   border: 0;
+  .z-index(11)
 }
 
 .main-nav__item {
@@ -63,6 +68,7 @@
     background: white;
     border-bottom: 1px solid white;
     border-top: 0;
+    .z-index(10);
   }
 
   &:first-child {
@@ -95,7 +101,6 @@
   padding-bottom: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  z-index: 500;
 
   &:visited,
   &:hover {
