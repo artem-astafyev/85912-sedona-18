@@ -1,12 +1,10 @@
-// <div class="features">
-//             <ul class="features__list">
-//               <li class="features__item">
-//                 <div class="features__icon features__icon--hotel"/>
-//                 <div class="features__content">
-//                   <div class="features__title">Жилье</div>
-//                   <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-//                 </div>
-//               </li>
+@import 'shared.less';
+
+.features{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: white;
+}
 
 .features__list {
   list-style: none;
@@ -18,27 +16,46 @@
 .features__item {
   display: flex;
   flex-direction: row;
+  padding-bottom: 3px;
 }
 
 .features__icon {
-  width: 70x;
-  height: 92px+41;
+  width: 59px;
+  height: 50px;
   background-size: 100% 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
 
   &--hotel{
     background-image: url('../img/icon-house.svg');
-
+    background-size: 37px 36px;
   }
 
   &--favor{
     background-image: url('../img/icon-gift.svg');
+    background-size: 32px 38px;
   }
 
   &--burger{
     background-image: url('../img/icon-burger.svg');
+    background-size: 40px 45px;
   }
 }
 
 .features__content{
   width: 210px+42px;
+  padding-left: 11px;
+  padding-top: 11px;
+}
+
+.features__title {
+  .font-bold();
+  color: black;
+}
+
+.features__text {
+  .font-regular();
+  line-height: 21px;
+  width: 215px;
+  color: #333333;
 }
