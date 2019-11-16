@@ -1,0 +1,44 @@
+// <div class="features">
+//             <ul class="features__list">
+//               <li class="features__item">
+//                 <div class="features__icon features__icon--hotel"/>
+//                 <div class="features__content">
+//                   <div class="features__title">Жилье</div>
+//                   <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+//                 </div>
+//               </li>
+
+.features__list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.features__icon {
+  width: 70x;
+  height: 92px+41;
+  background-size: 100% 100%;
+
+  &--hotel{
+    background-image: url('../img/icon-house.svg');
+
+  }
+
+  &--favor{
+    background-image: url('../img/icon-gift.svg');
+  }
+
+  &--burger{
+    background-image: url('../img/icon-burger.svg');
+  }
+}
+
+.features__content{
+  width: 210px+42px;
+}

@@ -1,0 +1,41 @@
+@import "shared.less";
+
+.reasons {
+  text-align: center;
+}
+
+.reasons__item {
+  background-color: @blue;
+  color: white;
+
+  &--grey {
+    background-color: #e5e5e5;
+    color: black;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: white;
+      width: 320px - 40;
+      margin: 0 auto;
+    }
+  }
+}
+
+ .reasons__content {
+   height: 211px - 61px - 28px;
+   padding-top: 25px;
+   padding-right: 27px;
+   padding-bottom: 45px;
+   padding-left: 28px;
+ }
+
+.reasons__title{
+  .font-bold();
+}
+
+.reasons__number::before, .reasons__number::after{
+  content: " — ";
+  letter-spacing: 0;
+}

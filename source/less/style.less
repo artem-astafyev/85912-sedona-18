@@ -1,23 +1,4 @@
-@import "page-wrapper.less";
-@import "main-nav.less";
-@import "intro.less";
-@import "common-section.less";
-
-body {
-  margin: 0;
-  padding: 0;
-  font-weight: lighter;
-  text-transform: uppercase;
-  font-family: 'PTSans-Regular', sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+@import "shared.less";
 
 @font-face {
   font-family: 'PTSans-Regular';
@@ -31,4 +12,24 @@ body {
        url('../fonts/ptsansbold.woff') format('woff')
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  .font-regular();
+}
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@import "page-wrapper.less";
+@import "main-nav.less";
+@import "intro.less";
+@import "common-section.less";
+@import "reasons.less";
+@import "features.less";
