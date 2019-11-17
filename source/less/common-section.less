@@ -1,11 +1,21 @@
+.horizontal-padding(@padding){
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .common-section {
   background: white;
   height: 225px;
   width: 320px;
-  padding-left: 32px;
-  padding-right: 33px;
   text-align: center;
   box-sizing: border-box;
+}
+
+.common-section__text{
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  .horizontal-padding(25px)
 }
 
 .common-section__title {
@@ -14,10 +24,24 @@
   padding-top: 25px;
   padding-bottom: 12px;
   .font-bold();
+  .horizontal-padding(25px);
+
+  &--big {
+    .font-bold(21px);
+    line-height: 26px;
+    padding-top: 11px;
+    padding-bottom: 1px;
+
+  }
+
+  &--big + .common-section__text {
+    line-height: 24px;
+    .horizontal-padding(30px);
+  }
 }
 
-.common-section__text{
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
+.common-section__button{
+  margin: 35px auto;
 }
+
+
