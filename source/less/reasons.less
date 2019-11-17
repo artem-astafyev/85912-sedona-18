@@ -1,6 +1,7 @@
 @import "shared.less";
 
 .reasons {
+  position: relative;
   text-align: center;
 }
 
@@ -11,6 +12,21 @@
 .reasons__item {
   background-color: @blue;
   color: white;
+
+  &:first-child::before{
+    position:absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url('../img/bg-triangle.svg') top center no-repeat;
+    height: 37px;
+    width: 100%;
+  }
+
+  &:first-child .reasons__content{
+    margin-top: 73px;
+  }
 }
 
 @m-top:35px;
