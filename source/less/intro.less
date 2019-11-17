@@ -1,19 +1,24 @@
 .intro {
-  position: relative;
   display: flex;
-  width: 320px;
-  height: 390px;
-  background: url('../img/bg-back-mobile@1x.jpg') center top;
   justify-content: center;
-  align-items: center;
-}
+  background: url('../img/bg-back-mobile@1x.jpg') center bottom;
+  height: 158px;
 
-.intro__banner{
-  margin-top: 10px;
-  width: 281px;
-  height: 214px;
-}
+  .intro__banner {
+    margin-top: 51px;
+    width: 229px;
+    height: 39px;
+  }
 
-.intro{
-  padding: 0;
+  &--index-page{
+    width: 320px;
+    height: 389px;
+    background: url('../img/bg-back-mobile@1x.jpg') center top;
+
+    .intro__banner{
+      margin-top: 91px;
+      width: 281px;
+      height: 214px;
+    }
+  }
 }
