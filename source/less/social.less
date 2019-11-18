@@ -1,6 +1,6 @@
-@import 'shared.less';
+@import "shared.less";
 
-.social__list{
+.social__list {
   display: flex;
   justify-content: center;
   direction: row;
@@ -16,40 +16,41 @@
   background: @blue;
   color: white;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-right: 6px;
   }
 
-  &:first-child{
+  &:first-child {
     margin-left: auto;
   }
 
-  &:last-child{
+  &:last-child {
     margin-right: 85px;
   }
 
-  &:first-child, &:last-child{
+  &:first-child,
+  &:last-child {
     width: 46px;
   }
 }
 
-.social__item .social__link{
+.social__item .social__link {
   display: block;
   height: 100%;
   width: 100%;
 
-  &--twitter{
-    background: url('../img/icon-twitter.svg') center center no-repeat;
+  &--twitter {
+    background: url("../img/icon-twitter.svg") center center no-repeat;
     background-size: 18px 14px;
   }
 
-  &--facebook{
-    background: url('../img/icon-facebook.svg') center center no-repeat;
+  &--facebook {
+    background: url("../img/icon-facebook.svg") center center no-repeat;
     background-size: 9px 18px;
   }
 
-  &--youtube{
-    background: url('../img/icon-youtube.svg') center center no-repeat;
+  &--youtube {
+    background: url("../img/icon-youtube.svg") center center no-repeat;
     background-size: 20px 14px;
   }
 }
