@@ -1,50 +1,16 @@
+@import "fonts.less";
+@import "common.less";
 @import "shared.less";
-
-@font-face {
-  font-family: "PTSans-Regular";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "PTSans-Bold";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
-}
-
-body {
-  text-transform: uppercase;
-  .font-regular();
-}
-
-body,
-h1,
-h2,
-h3,
-html,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-@import "page-wrapper.less";
-@import "main-nav.less";
-@import "intro.less";
-@import "button.less";
-@import "reasons.less";
-@import "features.less";
-@import "common-section.less";
-@import "map.less";
-@import "footer.less";
-@import "social.less";
-@import "copyright.less";
-@import "photos.less";
-@import "like.less";
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+@import "blocks/page-wrapper.less";
+@import "blocks/main-nav.less";
+@import "blocks/intro.less";
+@import "blocks/button.less";
+@import "blocks/reasons.less";
+@import "blocks/features.less";
+@import "blocks/common-section.less";
+@import "blocks/map.less";
+@import "blocks/footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
+@import "blocks/photos.less";
+@import "blocks/like.less";
