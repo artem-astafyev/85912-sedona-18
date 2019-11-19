@@ -1,0 +1,110 @@
+@border-top: #9ac2db;
+@border-bottom: #678fa8;
+
+.z-index(@z-index) {
+  z-index: @z-index;
+}
+
+.main-nav {
+  position: relative;
+  display: block;
+  width: 320px;
+  .font-bold();
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.main-nav__cross-button {
+  position: absolute;
+  display: block;
+  right: 20px;
+  top: 17px;
+  width: 23px;
+  height: 22px;
+  background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+  border: 0;
+}
+
+.main-nav__menu-button {
+  position: absolute;
+  display: block;
+  right: 20px;
+  bottom: 17px;
+  width: 23px;
+  height: 22px;
+  background: url("../img/icon-menu.svg") no-repeat 50% 50%;
+  border: 0;
+  .z-index(11);
+}
+
+.main-nav__item {
+  cursor: pointer;
+  background-color: @blue;
+  color: @white;
+  width: 320px;
+  height: 54px;
+  text-align: center;
+  border-bottom: 1px solid @border-bottom;
+  border-top: 1px solid @border-top;
+  line-height: 40px;
+
+  &:hover {
+    background-color: @blue-dark;
+  }
+
+  &:active {
+    background-color: @blue-darkest;
+  }
+
+  &:last-child {
+    background: white;
+    border-bottom: 2px solid white;
+    border-top: 0;
+    .z-index(10);
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &:nth-last-child(2) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      content: "";
+      width: 320px;
+      height: 4px;
+      background: linear-gradient(to top, @border-bottom, @blue);
+    }
+
+    &:hover::after {
+      background: @blue-dark;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 8px;
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:hover {
+    color: @white;
+  }
+
+  &:active {
+    color: @white-transparent;
+  }
+}

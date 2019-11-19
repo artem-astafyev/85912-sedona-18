@@ -3,14 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="page-wrapper">
+
     <header class="header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__cross-button" type="button"></button>
+        <button class="main-nav__menu-button" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -26,7 +30,7 @@
           </li>
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__logo">
-              <img src="https://via.placeholder.com/102x83" alt="Седона" width="102" height="83" />
+              <img src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83" />
             </a>
           </li>
         </ul>
@@ -34,36 +38,31 @@
     </header>
 
     <main class="main">
-
       <section class="intro">
         <h1 class="visually-hidden">Седона — лучший город в Аризоне!</h1>
         <div class="intro__content">
-          <img class="intro__banner" src="https://via.placeholder.com/281x214" alt="Седона" />
+          <img class="intro__banner" src="img/text-sedona.svg" alt="Седона" width="229" height="39" />
         </div>
       </section>
 
-      <section class="common-section">
+      <section class="common-section common-section--photo">
         <h2 class="common-section__title">Фото и видео</h2>
-        <p class="common-section__text">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о
-          политикие и экономике.</p>
+        <p class="common-section__text">Не&nbsp;можете&nbsp;решиться&nbsp;на&nbsp;путешествие
+          из-за&nbsp;курса?&nbsp;Фотографии&nbsp;помогут Вам&nbsp;забыть о
+          политике и экономике.</p>
       </section>
 
       <section class="photos">
         <ul class="photos__list">
           <li class="photos__item">
-            <figure>
-              <div class="photos__wrapper">
-                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-                  alt="Народные просторы">
-              </div>
+            <figure class="photos__wrapper">
+              <img class="photos__image" src="./img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+                alt="Народные просторы">
               <figcaption class="photos__content">
-                <h2 class="photos__description">Народные просторы</h2>
+                <h2 class="photos__description">Неродные просторы</h2>
                 <p class="photos__author">Автор фото: Борис</p>
                 <div class="photos__like like">
-                  <a class="like__link" href="#like">
-                    <img class="like__image" src="https://via.placeholder.com/23x21" width="23" height="21"
-                      alt="Like">
-                  </a>
+                  <a class="like__link" href="#like"></a>
                   <span class="like__count">1350</span>
                 </div>
               </figcaption>
@@ -71,19 +70,14 @@
           </li>
 
           <li class="photos__item">
-            <figure>
-              <div class="photos__wrapper">
-                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-                  alt="Местная растительность">
-              </div>
+            <figure class="photos__wrapper">
+              <img class="photos__image" src="./img/photo-cactus-desktop@1x.jpg" width="280" height="280"
+                alt="Местная растительность">
               <figcaption class="photos__content">
                 <h2 class="photos__description">Местная растительность</h2>
                 <p class="photos__author">Автор фото: Сергей</p>
                 <div class="photos__like like">
-                  <a class="like__link" href="#like">
-                    <img class="like__image" src="https://via.placeholder.com/23x21" width="23" height="21"
-                      alt="Like">
-                  </a>
+                  <a class="like__link" href="#like"></a>
                   <span class="like__count">143</span>
                 </div>
               </figcaption>
@@ -91,19 +85,14 @@
           </li>
 
           <li class="photos__item">
-            <figure>
-              <div class="photos__wrapper">
-                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-                  alt="Дорога на север">
-              </div>
+            <figure class="photos__wrapper">
+              <img class="photos__image" src="./img/photo-roads-mobile@1x.jpg" width="280" height="280"
+                alt="Дорога на север">
               <figcaption class="photos__content">
                 <h2 class="photos__description">Дорога на север</h2>
                 <p class="photos__author">Автор фото: Петр</p>
                 <div class="photos__like like">
-                  <a class="like__link" href="#like">
-                    <img class="like__image" src="https://via.placeholder.com/23x21" width="23" height="21"
-                      alt="Like">
-                  </a>
+                  <a class="like__link" href="#like"></a>
                   <span class="like__count">96</span>
                 </div>
               </figcaption>
@@ -111,18 +100,14 @@
           </li>
 
           <li class="photos__item">
-            <figure>
-              <div class="photos__wrapper">
-                <img class="photos__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-                  alt="Мост дьявола">
-              </div>
+            <figure class="photos__wrapper">
+              <img class="photos__image" src="./img/photo-bridge-mobile@1x.jpg" width="280" height="280"
+                alt="Мост дьявола">
               <figcaption class="photos__content">
                 <h2 class="photos__description">Мост дьявола</h2>
                 <p class="photos__author">Автор фото: Антон</p>
                 <div class="photos__like like">
-                  <a class="like__link" href="#like">
-                    <img class="like__image" src="https://via.placeholder.com/23x21" width="23" height="21" alt="Like">
-                  </a>
+                  <a class="like__link" href="#like"></a>
                   <span class="like__count">254</span>
                 </div>
               </figcaption>
@@ -133,18 +118,19 @@
 
       <section class="common-section">
         <h2 class="common-section__title">Все ещё сомневаетесь?</h2>
-        <p class="common-section__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в несколько раз!</p>
+        <p class="common-section__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          несколько раз!</p>
       </section>
 
       <section class="player">
-          <h2 class="visually-hidden">Видео о нас</h2>
-          <div class="player__screen"></div>
-          <div class="player__controls">
-            <div class="player__progress-bar"></div>
-            <button class="player__repeat"></button>
-            <button class="player__subtitle"></button>
-            <button class="player__fullscreen"></button>
-          </div>
+        <h2 class="visually-hidden">Видео о нас</h2>
+        <div class="player__screen"></div>
+        <div class="player__controls">
+          <div class="player__progress-bar"></div>
+          <button class="player__repeat"></button>
+          <button class="player__subtitle"></button>
+          <button class="player__fullscreen"></button>
+        </div>
       </section>
 
     </main>
@@ -170,7 +156,7 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+            <img class="copyright__logo" src="./img/logo-htmlacademy.svg" width="27" height="34"
               alt="Html Academy" />
           </a>
         </div>

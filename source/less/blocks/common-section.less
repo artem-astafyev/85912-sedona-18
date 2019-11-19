@@ -1,0 +1,74 @@
+.horizontal-padding(@padding) {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.common-section {
+  position: relative;
+  background: white;
+  height: 202px;
+  width: 320px;
+  text-align: center;
+  box-sizing: border-box;
+
+  &--big {
+    height: 286px;
+  }
+
+  &--photo {
+    height: 190px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  &--photo .common-section__title {
+    padding-top: 38px;
+  }
+
+  &--photo .common-section__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 24px;
+  }
+}
+
+.common-section__text {
+  padding-top: 27px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  .horizontal-padding(25px);
+}
+
+.common-section__title {
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 40px;
+  .font-bold();
+  .horizontal-padding(25px);
+
+  &--big {
+    .font-bold(21px);
+    line-height: 26px;
+    padding-top: 28px;
+  }
+
+  &--big + .common-section__text {
+    padding-top: 19px;
+    line-height: 24px;
+    .horizontal-padding(30px);
+  }
+}
+
+.common-section__button {
+  margin: 35px auto;
+}
