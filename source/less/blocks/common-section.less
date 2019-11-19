@@ -3,6 +3,19 @@
   padding-right: 25px;
 }
 
+.pseudo-underline() {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+}
+
 .common-section {
   position: relative;
   background: white;
@@ -17,17 +30,7 @@
 
   &--photo {
     height: 190px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: #e6e6e6;
-    }
+    .pseudo-underline();
   }
 
   &--photo .common-section__title {
@@ -37,6 +40,22 @@
   &--photo .common-section__text {
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 24px;
+  }
+
+  &--form {
+    height: 204px;
+    .pseudo-underline();
+  }
+
+  &--form .common-section__title {
+    padding-top: 38px;
+  }
+
+  &--form .common-section__text {
+    padding-top: 26px;
+    padding-left: 23px;
+    padding-right: 21px;
     line-height: 24px;
   }
 }
