@@ -10,31 +10,31 @@
 
 <body>
   <div class="page-wrapper">
-      <header class="header">
-          <nav class="main-nav">
-            <button class="main-nav__cross-button" type="button"></button>
-            <button class="main-nav__menu-button" type="button"></button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="photo.html">Фото и видео</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" >Форма отзыва</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
-              </li>
-              <li class="main-nav__item main-nav__item--logo">
-                <a class="main-nav__logo">
-                  <img src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+    <header class="header">
+      <nav class="main-nav">
+        <button class="main-nav__cross-button" type="button"></button>
+        <button class="main-nav__menu-button" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo">
+              <img src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="main">
 
@@ -60,25 +60,33 @@
           </div>
           <div class="textbox">
             <label class="textbox__label" for="lastname">Фамилия<sup>*</sup>:</label>
-            <input class="textbox__input" type="text" name="lastname" id="lastname" placeholder="Иванов" required>
+            <span class="textbox__wrapper">
+              <input class="textbox__input" type="text" name="lastname" id="lastname" placeholder="Иванов" required>
+            </span>
           </div>
           <div class="textbox">
             <label class="textbox__label" for="middlename">Отчество:</label>
-            <input class="textbox__input" type="text" name="middlename" id="middlename" placeholder="Александрович">
+            <span class="textbox__wrapper">
+              <input class="textbox__input" t ype="text" name="middlename" id="middlename" placeholder="Александрович">
+            </span>
           </div>
         </fieldset>
 
         <fieldset class="form__group">
           <span class="form__group-title">Контактная информация:</span>
           <div class="textbox textbox--contact">
-            <label class="textbox__label textbox__label--contact" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input class="textbox__input textbox__input--contact" type="tel" name="phone" id="phone"
-              placeholder="Введите телефон" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+            <label class="textbox__label" for="phone">Контактный телефон<sup>*</sup>:</label>
+            <span class="textbox__wrapper textbox__wrapper--phone">
+              <input class="textbox__input" type="tel" name="phone" id="phone"
+                placeholder="Введите телефон" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+            </span>
           </div>
           <div class="textbox textbox--contact">
-            <label class="textbox__label textbox__label--contact" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="textbox__input textbox__input--contact" type="email" name="email" id="email"
-              placeholder="Введите e-mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+            <label class="textbox__label " for="email">Электронная почта<sup>*</sup>:</label>
+            <span class="textbox__wrapper textbox__wrapper--email">
+              <input class="textbox__input" type="email" name="email" id="email"
+                placeholder="Введите e-mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+            </span>
           </div>
         </fieldset>
 
@@ -154,8 +162,7 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <img class="copyright__logo" src="./img/logo-htmlacademy.svg" width="27" height="34"
-              alt="Html Academy" />
+            <img class="copyright__logo" src="./img/logo-htmlacademy.svg" width="27" height="34" alt="Html Academy" />
           </a>
         </div>
       </div>
