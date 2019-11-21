@@ -1,0 +1,68 @@
+// <div class="radio">
+// <input class="radio__input" type="radio" name="feeling" id="feeling-good" value="feeling3" checked>
+// <label class="radio__label" for="feeling-good">Скорее положительные</label>
+// </div>
+
+.fill-color(@color) {
+  background-color: @color;
+  border-color: @color;
+}
+
+.radio {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 64px;
+  padding-bottom: 13px;
+
+  &:hover .radio__checkmark,
+  &:hover .radio__checkmark::after {
+    .fill-color(#e5e5e5);
+  }
+
+  &:active .radio__checkmark,
+  &:active .radio__checkmark::after {
+    .fill-color(#d5d5d5);
+  }
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.radio__label {
+  width: 190px;
+  line-height: 26px;
+  padding-left: 15px;
+  text-transform: initial;
+  .font-bold(18px);
+}
+
+.radio__checkmark {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  border: 5px solid;
+  .fill-color(#f2f2f2);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__checkmark::after {
+  display: block;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 3px solid;
+  .fill-color(#f2f2f2);
+  border-radius: 50%;
+}
+
+.radio .radio__input:checked ~ .radio__checkmark::after {
+  .fill-color(black);
+}
