@@ -14,15 +14,22 @@
   align-items: center;
   height: 64px;
   padding-bottom: 13px;
+  line-height: 26px;
+  text-transform: initial;
+  .font-bold(18px);
 
   &:hover .radio__checkmark,
   &:hover .radio__checkmark::after {
     .fill-color(#e5e5e5);
   }
 
-  &:active .radio__checkmark,
-  &:active .radio__checkmark::after {
+  &:active .radio__checkmark {
     .fill-color(#d5d5d5);
+  }
+
+  &:active .radio__checkmark::after {
+    .fill-color(black);
+    opacity: 0.3;
   }
 }
 
@@ -34,14 +41,6 @@
   cursor: pointer;
 }
 
-.radio__label {
-  width: 190px;
-  line-height: 26px;
-  padding-left: 15px;
-  text-transform: initial;
-  .font-bold(18px);
-}
-
 .radio__checkmark {
   display: flex;
   height: 48px;
@@ -51,6 +50,7 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  margin-right: 15px;
 }
 
 .radio__checkmark::after {

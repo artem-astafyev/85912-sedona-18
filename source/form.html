@@ -77,36 +77,36 @@
           <div class="textbox textbox--contact">
             <label class="textbox__label" for="phone">Контактный телефон<sup>*</sup>:</label>
             <span class="textbox__wrapper textbox__wrapper--phone">
-              <input class="textbox__input" type="tel" name="phone" id="phone"
-                placeholder="Введите телефон" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+              <input class="textbox__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
             </span>
           </div>
           <div class="textbox textbox--contact">
             <label class="textbox__label " for="email">Электронная почта<sup>*</sup>:</label>
             <span class="textbox__wrapper textbox__wrapper--email">
-              <input class="textbox__input" type="email" name="email" id="email"
-                placeholder="Введите e-mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+              <input class="textbox__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
             </span>
           </div>
         </fieldset>
 
         <fieldset class="form__group">
           <span class="form__group-title">Ваше общее впечатление:</span>
-          <div class="radio">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-good" value="feeling3" checked>
+          <label class="radio" for="feeling-good">
+            <input class="radio__input" type="radio" name="feeling" id="feeling-good" value="feeling1" checked>
             <div class="radio__checkmark"></div>
-            <label class="radio__label" for="feeling-good">Скорее положительные</label>
-          </div>
-          <div class="radio">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2">
+            Скорее положительные
+          </label>
+          <label class="radio" for="feeling-bad">
+            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2" checked>
             <div class="radio__checkmark"></div>
-            <label class="radio__label" for="feeling-bad">Скорее отрицательное</label>
-          </div>
-          <div class="radio">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling1">
+            Скорее отрицательное
+          </label>
+          <label class="radio" for="feeling-notsure">
+            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling3" checked>
             <div class="radio__checkmark"></div>
-            <label class="radio__label" for="feeling-notsure">Затрудняюсь ответить</label>
-          </div>
+            Затрудняюсь ответить
+          </label>
         </fieldset>
 
         <fieldset class="form__group">
