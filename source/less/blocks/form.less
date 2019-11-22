@@ -13,7 +13,7 @@
   .font-bold();
 }
 
-.form__group::after {
+.form__group:not(:last-child) .form__group::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -29,4 +29,9 @@
   padding-top: 18px;
   text-align: center;
   padding-bottom: 20px;
+}
+
+.form__submit.button {
+  margin-top: 20px;
+  border: none;
 }
