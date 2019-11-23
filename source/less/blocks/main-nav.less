@@ -63,15 +63,17 @@
     background-color: @blue-darkest;
   }
 
+  &:first-child {
+    border-top: 0;
+    height: 55px;
+  }
+
   &:last-child {
     background: white;
     border-bottom: 2px solid white;
     border-top: 0;
     .z-index(10);
-  }
-
-  &:first-child {
-    border-top: 0;
+    height: 53px;
   }
 
   &:nth-last-child(2) {
