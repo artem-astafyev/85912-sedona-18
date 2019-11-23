@@ -50,27 +50,49 @@
   }
 }
 
-.player__replay,
-.player__subtitle,
-.player__fullscreen {
-  border: none;
+.svg-fill(@color) {
+  fill: @color;
+
+  path {
+    fill: @color;
+  }
+
+  polygon {
+    fill: @color;
+  }
 }
 
-.player__replay {
+.player__button {
+  border: none;
+  background: #f2f2f2;
+  outline: none;
+
+  .player__icon {
+    .svg-fill(#5c6870);
+  }
+
+  &:hover .player__icon {
+    .svg-fill(black);
+  }
+
+  &:active .player__icon {
+    .svg-fill(#333333);
+    opacity: 0.3;
+  }
+}
+
+.player__button--replay {
   width: 25px * 2 + 16;
   margin-right: auto;
-  background: url("../../img/icon-video-replay.svg") center center no-repeat;
   background-size: 16px 25px;
 }
 
-.player__subtitle {
+.player__button--subtitle {
   width: 48px;
-  background: url("../../img/icon-video-subtitles.svg") center center no-repeat;
   background-size: 32px 20px;
 }
 
-.player__fullscreen {
+.player__button--fullscreen {
   width: 25px * 2 + 16;
-  background: url("../../img/icon-video-fullscreen.svg") center center no-repeat;
   background-size: 20px 20px;
 }
