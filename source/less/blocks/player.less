@@ -1,0 +1,76 @@
+.player {
+  width: 320px;
+  height: 200px + 66;
+  padding-bottom: 39px;
+}
+
+.player__screen {
+  min-height: 201px;
+  width: 100%;
+  background: url("../../img/video-mobile@1x.jpg") top left no-repeat;
+  background-size: 320px 200px;
+}
+
+.player__controls {
+  display: flex;
+  position: relative;
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+  background: #f2f2f2;
+}
+
+.player__progress-bar {
+  position: absolute;
+  top: -45px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 280px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 23px;
+    width: 235px;
+    height: 3px;
+    background: white;
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+  }
+}
+
+.player__replay,
+.player__subtitle,
+.player__fullscreen {
+  border: none;
+}
+
+.player__replay {
+  width: 25px * 2 + 16;
+  margin-right: auto;
+  background: url("../../img/icon-video-replay.svg") center center no-repeat;
+  background-size: 16px 25px;
+}
+
+.player__subtitle {
+  width: 48px;
+  background: url("../../img/icon-video-subtitles.svg") center center no-repeat;
+  background-size: 32px 20px;
+}
+
+.player__fullscreen {
+  width: 25px * 2 + 16;
+  background: url("../../img/icon-video-fullscreen.svg") center center no-repeat;
+  background-size: 20px 20px;
+}
