@@ -1,10 +1,12 @@
 .social__list {
   display: flex;
   justify-content: center;
-  direction: row;
+  flex-direction: row;
   list-style: none;
-  margin: 0;
+  width: 280px;
+  flex-grow: 1;
   padding: 0;
+  padding-right: 3px;
 }
 
 .social__item {
@@ -16,14 +18,6 @@
 
   &:not(:last-child) {
     margin-right: 6px;
-  }
-
-  &:first-child {
-    margin-left: auto;
-  }
-
-  &:last-child {
-    margin-right: 85px;
   }
 
   &:first-child,
