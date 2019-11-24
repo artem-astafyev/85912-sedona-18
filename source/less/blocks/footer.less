@@ -28,6 +28,9 @@
   display: flex;
 }
 
+/**
+    tablet
+*/
 @media (min-width: @tablet-screen) {
   .footer {
     height: 120px;
@@ -44,5 +47,14 @@
   .footer__social,
   .footer__copyright {
     padding: 0;
+  }
+}
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .footer__inner {
+    margin: 0 120px;
   }
 }
