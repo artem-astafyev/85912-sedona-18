@@ -125,11 +125,29 @@
   .clear-link-color(white);
 }
 
+.main-nav.main-nav--closed {
+  .main-nav__item:not(:last-child) {
+    display: none;
+  }
+}
+
+.main-nav.main-nav--opened {
+  .main-nav__item:not(:last-child) {
+    display: block;
+  }
+}
+
 /**
   tablet
 */
 
 @media (min-width: @tablet-screen) {
+  .main-nav.main-nav--closed {
+    .main-nav__item:not(:last-child) {
+      display: block;
+    }
+  }
+
   .main-nav__list {
     flex-direction: row;
   }
