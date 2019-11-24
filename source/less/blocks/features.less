@@ -81,6 +81,7 @@
     align-items: center;
     justify-content: flex-start;
     border: none;
+    flex-grow: 1;
 
     &:nth-child(1) {
       order: 1;
@@ -96,26 +97,25 @@
   }
 
   .features__icon {
-    background-size: 100% 100%;
     background-position: top right;
     background-repeat: no-repeat;
     flex-shrink: 0;
     margin-top: 60px;
-    height: 75px;
+    height: 80px;
 
     &--hotel {
-      background-size: 75px 72px;
       width: 75px;
-    }
-
-    &--favor {
-      background-size: 77px 68px;
-      width: 77px;
+      background-size: 75px 75px;
     }
 
     &--burger {
-      background-size: 64px 75px;
+      width: 77px;
+      background-size: 77px 68px;
+    }
+
+    &--favor {
       width: 64px;
+      background-size: 64px 75px;
     }
   }
 
@@ -130,5 +130,32 @@
   .features__title {
     padding: 0;
     padding-top: 20px;
+  }
+}
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .features__item {
+    .features__icon {
+      margin-top: 60px;
+      height: 75px;
+
+      &--hotel {
+        background-size: 75px 72px;
+        width: 75px;
+      }
+
+      &--burger {
+        background-size: 64px 75px;
+        width: 64px;
+      }
+
+      &--favor {
+        background-size: 77px 68px;
+        width: 77px;
+      }
+    }
   }
 }
