@@ -34,3 +34,26 @@
     width: 100%;
   }
 }
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .intro {
+    &--index-page {
+      height: 518px;
+      background: url("../img/bg-back-tablet@1x.jpg") center top;
+
+      .intro__banner {
+        margin-top: 91px;
+        width: 460px;
+        height: 350px;
+      }
+
+      &::after {
+        background: url("../img/bg-intro-triangle-tablet.svg") top center no-repeat;
+        height: 57px;
+      }
+    }
+  }
+}
