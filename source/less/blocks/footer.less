@@ -5,7 +5,7 @@
 
 .footer__inner {
   display: flex;
-  height: 233px;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -26,4 +26,23 @@
 
 .footer__social {
   display: flex;
+}
+
+@media (min-width: @tablet-screen) {
+  .footer {
+    height: 120px;
+  }
+
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+  }
+
+  .footer__hashtag,
+  .footer__social,
+  .footer__copyright {
+    padding: 0;
+  }
 }
