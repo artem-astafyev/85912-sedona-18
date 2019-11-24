@@ -108,6 +108,10 @@
 @media (min-width: @tablet-screen) {
   .common-section {
     min-height: 206px;
+
+    &--big {
+      min-height: 318px;
+    }
   }
 
   .common-section__title {
@@ -115,5 +119,22 @@
     padding-top: 51px;
     padding-left: 80px;
     padding-right: 80px;
+
+    &--big {
+      .font-bold(30px);
+      line-height: 26px;
+      padding-top: 57px;
+    }
+
+    &--big + .common-section__text {
+      padding-top: 40px;
+      line-height: 24px;
+      width: 434px;
+      margin: 0 auto;
+    }
+  }
+
+  .common-section__button {
+    width: 458px;
   }
 }
