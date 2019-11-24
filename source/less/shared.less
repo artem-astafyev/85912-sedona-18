@@ -12,10 +12,15 @@
   font-size: @font-size;
 }
 
-.font-bold(@font-size: 18px) {
+.font-bold(@font-size: 18px; @line-height: 26px) when (@line-height >= 10px) {
   font-family: "PTSans-Bold", sans-serif;
   font-size: @font-size;
-  line-height: 26px;
+  line-height: @line-height;
+}
+
+.font-bold(@font-size: 18px; @line-height: 26px) when (@line-height <= 10px) {
+  font-family: "PTSans-Bold", sans-serif;
+  font-size: @font-size;
 }
 
 .pseudo-underline() {
