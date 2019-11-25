@@ -97,3 +97,70 @@
   width: 25px * 2 + 16;
   background-size: 20px 20px;
 }
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .player {
+    position: relative;
+    width: 648px;
+    height: 499px + 41;
+    padding: 0 60px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+
+    .player__button {
+      background: transparent;
+      .svg-fill(white);
+
+      &--replay {
+        order: -1;
+        margin: 0;
+      }
+    }
+  }
+
+  .player__screen {
+    width: 100%;
+    height: 499px;
+    background: url("../img/video-tablet@1x.jpg") top left no-repeat;
+    background-size: 648px 499px;
+  }
+
+  .player__controls {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 648px;
+    height: 93px;
+    bottom: 41px;
+    left: 60px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .player__progress-bar {
+    width: 389px;
+    position: relative;
+    top: 2px;
+    height: 10px;
+    background: transparent;
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: white;
+      opacity: 0.3;
+    }
+
+    &::after {
+      top: -3px;
+      left: 115px;
+      width: 9px;
+      height: 9px;
+    }
+  }
+}
