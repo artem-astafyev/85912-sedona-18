@@ -119,3 +119,68 @@
     }
   }
 }
+
+
+/**
+    tablet
+*/
+@media (min-width: @desktop-screen) {
+  .photos {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .photos__item {
+    width: 400px;
+    height: 267px;
+
+    .photos__image {
+      width: 400px;
+      height: 267px;
+    }
+
+    &:first-child {
+      width: 1200px;
+      height: 400px;
+
+      .photos__image {
+        width: 1200px;
+        height: 400px;
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .photos__content {
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+
+    .photos__like,
+    .photos__description,
+    .photos__author {
+      color: white;
+    }
+
+    .photos__like {
+      svg {
+        .svg-fill(white);
+        opacity: 1;
+      }
+
+      .like__count {
+        color: white;
+      }
+
+      .like__link {
+        opacity: 1;
+      }
+    }
+  }
+}

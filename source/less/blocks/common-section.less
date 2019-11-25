@@ -125,8 +125,8 @@
       .common-section__text {
         .font-regular(14px);
         line-height: 24px;
-        padding-left: 190px;
-        padding-right: 190px;
+        width: 428px;
+        margin: 0 auto;
       }
 
       &::after {
@@ -146,8 +146,8 @@
       .common-section__text {
         .font-regular(14px);
         line-height: 24px;
-        padding-left: 225px;
-        padding-right: 225px;
+        width: 415px;
+        margin: 0 auto;
       }
 
       &::after {
@@ -180,5 +180,24 @@
 
   .common-section__button {
     width: 458px;
+  }
+}
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .common-section {
+    &--photo {
+      min-height: 287px;
+
+      .common-section__title {
+        padding-top: 113px;
+      }
+    }
+
+    &--video {
+      height: 246px;
+    }
   }
 }
