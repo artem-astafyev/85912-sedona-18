@@ -1,14 +1,15 @@
 .photos__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .photos__item {
-
   position: relative;
+  width: 100%;
 
   &::after {
     content: "";
@@ -23,9 +24,10 @@
 }
 
 .photos__wrapper {
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 23px;
   padding-bottom: 23px;
 }
@@ -52,4 +54,133 @@
 
 .photos__like {
   padding-top: 6px;
+}
+
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .photos {
+    padding: 0 60px;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .photos__wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .photos__item {
+    width: 324px;
+    height: 267px + 80px;
+
+    .photos__image {
+      width: 324px;
+      height: 267px;
+    }
+
+    &:first-child {
+      width: 648px;
+      height: 480px;
+
+      .photos__image {
+        width: 648px;
+        height: 400px;
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .photos__content {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .photos__like,
+    .photos__description,
+    .photos__author {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+
+/**
+    tablet
+*/
+@media (min-width: @desktop-screen) {
+  .photos {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .photos__item {
+    width: 400px;
+    height: 267px;
+
+    .photos__image {
+      width: 400px;
+      height: 267px;
+    }
+
+    &:first-child {
+      width: 1200px;
+      height: 400px;
+
+      .photos__image {
+        width: 1200px;
+        height: 400px;
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .photos__content {
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+
+    .photos__like,
+    .photos__description,
+    .photos__author {
+      color: white;
+    }
+
+    .photos__like {
+      svg {
+        .svg-fill(white);
+        opacity: 1;
+      }
+
+      .like__count {
+        color: white;
+      }
+
+      .like__link {
+        opacity: 1;
+      }
+    }
+  }
 }

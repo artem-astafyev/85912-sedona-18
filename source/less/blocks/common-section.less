@@ -20,7 +20,6 @@
   position: relative;
   background: white;
   height: 202px;
-  width: 320px;
   text-align: center;
   box-sizing: border-box;
 
@@ -101,4 +100,104 @@
 
 .common-section__button {
   margin: 35px auto;
+}
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .common-section {
+    min-height: 206px;
+
+    &--big {
+      min-height: 318px;
+    }
+
+    &--photo {
+      min-height: 248px;
+
+      .common-section__title {
+        .font-bold(30px);
+        line-height: 26px;
+        padding-top: 76px;
+      }
+
+      .common-section__text {
+        .font-regular(14px);
+        line-height: 24px;
+        width: 428px;
+        margin: 0 auto;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &--video {
+      min-height: 244px;
+
+      .common-section__title {
+        .font-bold(30px);
+        line-height: 26px;
+        padding-top: 68px;
+      }
+
+      .common-section__text {
+        .font-regular(14px);
+        line-height: 24px;
+        width: 415px;
+        margin: 0 auto;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .common-section__title {
+    .font-bold(21px);
+    padding-top: 51px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 768px - 80 * 2;
+    margin: 0 auto;
+
+    &--big {
+      .font-bold(30px);
+      line-height: 26px;
+      padding-top: 57px;
+    }
+
+    &--big + .common-section__text {
+      padding-top: 40px;
+      line-height: 24px;
+      width: 434px;
+      margin: 0 auto;
+    }
+  }
+
+  .common-section__button {
+    width: 458px;
+  }
+}
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .common-section {
+    &--photo {
+      min-height: 287px;
+
+      .common-section__title {
+        padding-top: 113px;
+      }
+    }
+
+    &--video {
+      height: 246px;
+    }
+  }
 }

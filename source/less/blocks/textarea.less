@@ -1,10 +1,10 @@
 .textarea {
   display: block;
-  min-height: 120px;
+  min-height: 160px;
   border: 0;
-  width: 240px;
+  width: 100%;
   background: #f2f2f2;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -13,8 +13,10 @@
   color: black;
   .font-bold();
   overflow: hidden;
+  box-sizing: border-box;
 
   &::placeholder {
     color: black;
+    opacity: 1;
   }
 }
