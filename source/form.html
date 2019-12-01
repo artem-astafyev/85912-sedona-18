@@ -104,12 +104,12 @@
             Скорее положительные
           </label>
           <label class="radio" for="feeling-bad">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2" checked>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2">
             <span class="radio__checkmark"></span>
             Скорее отрицательное
           </label>
           <label class="radio" for="feeling-notsure">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling3" checked>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling3">
             <span class="radio__checkmark"></span>
             Затрудняюсь ответить
           </label>
@@ -117,26 +117,28 @@
 
         <fieldset class="form__group">
           <span class="form__group-title">Посещенные достопримечательности:</span>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="devilbridge" checked>
-            <span class="checkbox__checkmark"></span>
-            Мост Дьявола
-          </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="bellmountain" checked>
-            <span class="checkbox__checkmark"></span>
-            Гора-Колокол
-          </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="slidepark" checked>
-            <span class="checkbox__checkmark"></span>
-            Слайд-парк
-          </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="redrocks">
-            <span class="checkbox__checkmark"></span>
-            Красные скалы
-          </label>
+          <div class="form__group-inner">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="devilbridge" checked>
+              <span class="checkbox__checkmark"></span>
+              Мост Дьявола
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="bellmountain" checked>
+              <span class="checkbox__checkmark"></span>
+              Гора-Колокол
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="slidepark" checked>
+              <span class="checkbox__checkmark"></span>
+              Слайд-парк
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="redrocks">
+              <span class="checkbox__checkmark"></span>
+              Красные скалы
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="form__group">
@@ -146,8 +148,9 @@
         </fieldset>
 
         <fieldset class="form__group">
-          <div class="form__submit-wrapper">
+          <div class="form__group-inner">
             <input class="form__submit button" type="submit" value="Отправить отзыв">
+            <span class="form__group-tip"><sup>*</sup> - обязательные поля</span>
           </div>
         </fieldset>
       </form>
