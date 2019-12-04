@@ -80,19 +80,22 @@
 
         <fieldset class="form__group">
           <span class="form__group-title">Контактная информация:</span>
-          <div class="textbox textbox--contact">
-            <label class="textbox__label" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <span class="textbox__wrapper textbox__wrapper--phone">
-              <input class="textbox__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
-                pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
-            </span>
-          </div>
-          <div class="textbox textbox--contact">
-            <label class="textbox__label " for="email">Электронная почта<sup>*</sup>:</label>
-            <span class="textbox__wrapper textbox__wrapper--email">
-              <input class="textbox__input" type="email" name="email" id="email" placeholder="Введите e-mail"
-                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
-            </span>
+          <div class="form__group-inner form__group-inner--contacts">
+            <div class="textbox textbox--contact">
+              <label class="textbox__label textbox__label--mobile" for="phone">Контактный телефон<sup>*</sup>:</label>
+              <label class="textbox__label textbox__label--desktop" for="phone">Tелефон<sup>*</sup>:</label>
+              <span class="textbox__wrapper textbox__wrapper--phone">
+                <input class="textbox__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                  pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+              </span>
+            </div>
+            <div class="textbox textbox--contact">
+              <label class="textbox__label " for="email">Электронная почта<sup>*</sup>:</label>
+              <span class="textbox__wrapper textbox__wrapper--email">
+                <input class="textbox__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+              </span>
+            </div>
           </div>
         </fieldset>
 

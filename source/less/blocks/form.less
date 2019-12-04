@@ -132,3 +132,38 @@
     }
   }
 }
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__group {
+    &:nth-child(2) {
+      width: 1200px - 120 * 2;
+
+      .form__group-inner {
+        display: flex;
+      }
+
+      .form__group-inner--contacts {
+        justify-content: space-between;
+      }
+    }
+
+    &:nth-child(4) {
+      height: 172px;
+
+      .form__group-inner {
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+  }
+}

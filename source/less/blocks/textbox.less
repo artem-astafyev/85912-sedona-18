@@ -34,6 +34,10 @@
     left: 0.1em;
     font-size: 14px;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .textbox__input {
@@ -102,3 +106,29 @@
 .textbox__wrapper--email::after {
   background: url("../img/icon-mail.svg") center no-repeat, #e6e6e6;
 }
+
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .textbox--contact {
+    flex-direction: row;
+  }
+
+  .textbox--contact .textbox__label--desktop {
+    padding: 0;
+    padding-right: 16px;
+    display: block;
+  }
+
+  .textbox__label--mobile {
+    display: none;
+  }
+
+  .textbox--contact .textbox__wrapper {
+    width: 315px;
+    flex-grow: 0;
+  }
+}
+
