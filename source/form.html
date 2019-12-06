@@ -80,19 +80,22 @@
 
         <fieldset class="form__group">
           <span class="form__group-title">Контактная информация:</span>
-          <div class="textbox textbox--contact">
-            <label class="textbox__label" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <span class="textbox__wrapper textbox__wrapper--phone">
-              <input class="textbox__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
-                pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
-            </span>
-          </div>
-          <div class="textbox textbox--contact">
-            <label class="textbox__label " for="email">Электронная почта<sup>*</sup>:</label>
-            <span class="textbox__wrapper textbox__wrapper--email">
-              <input class="textbox__input" type="email" name="email" id="email" placeholder="Введите e-mail"
-                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
-            </span>
+          <div class="form__group-inner form__group-inner--contacts">
+            <div class="textbox textbox--contact">
+              <label class="textbox__label textbox__label--mobile" for="phone">Контактный телефон<sup>*</sup>:</label>
+              <label class="textbox__label textbox__label--desktop" for="phone">Tелефон<sup>*</sup>:</label>
+              <span class="textbox__wrapper textbox__wrapper--phone">
+                <input class="textbox__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                  pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+              </span>
+            </div>
+            <div class="textbox textbox--contact">
+              <label class="textbox__label " for="email">Электронная почта<sup>*</sup>:</label>
+              <span class="textbox__wrapper textbox__wrapper--email">
+                <input class="textbox__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
+              </span>
+            </div>
           </div>
         </fieldset>
 
@@ -104,12 +107,12 @@
             Скорее положительные
           </label>
           <label class="radio" for="feeling-bad">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2" checked>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-bad" value="feeling2">
             <span class="radio__checkmark"></span>
             Скорее отрицательное
           </label>
           <label class="radio" for="feeling-notsure">
-            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling3" checked>
+            <input class="radio__input" type="radio" name="feeling" id="feeling-notsure" value="feeling3">
             <span class="radio__checkmark"></span>
             Затрудняюсь ответить
           </label>
@@ -117,26 +120,28 @@
 
         <fieldset class="form__group">
           <span class="form__group-title">Посещенные достопримечательности:</span>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="devilbridge" checked>
-            <span class="checkbox__checkmark"></span>
-            Мост Дьявола
-          </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="bellmountain" checked>
-            <span class="checkbox__checkmark"></span>
-            Гора-Колокол
-          </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="slidepark" checked>
-            <span class="checkbox__checkmark"></span>
-            Слайд-парк
-          </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="redrocks">
-            <span class="checkbox__checkmark"></span>
-            Красные скалы
-          </label>
+          <div class="form__group-inner">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="devilbridge" checked>
+              <span class="checkbox__checkmark"></span>
+              Мост Дьявола
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="bellmountain" checked>
+              <span class="checkbox__checkmark"></span>
+              Гора-Колокол
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="slidepark" checked>
+              <span class="checkbox__checkmark"></span>
+              Слайд-парк
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="redrocks">
+              <span class="checkbox__checkmark"></span>
+              Красные скалы
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="form__group">
@@ -146,8 +151,9 @@
         </fieldset>
 
         <fieldset class="form__group">
-          <div class="form__submit-wrapper">
+          <div class="form__group-inner">
             <input class="form__submit button" type="submit" value="Отправить отзыв">
+            <span class="form__group-tip"><sup>*</sup> - обязательные поля</span>
           </div>
         </fieldset>
       </form>

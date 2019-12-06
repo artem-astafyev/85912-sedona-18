@@ -1,3 +1,10 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .form__group {
   position: relative;
   border: 0;
@@ -5,8 +12,6 @@
   margin: 0;
   padding-top: 18px;
   padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
   .font-bold(18px; 26px);
 
   &:nth-child(2) {
@@ -55,4 +60,110 @@
   margin-top: 8px;
   border: none;
   text-transform: uppercase;
+}
+
+.form__group-tip {
+  display: none;
+}
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .form {
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__group-title {
+    .font-bold(21px);
+  }
+
+  .form__group {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 648px;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 648px / 2;
+    }
+
+    &:nth-child(3) {
+      order: -1;
+    }
+
+    &:nth-child(4) {
+      .form__group-title {
+        width: 320px;
+        margin: 0 auto;
+      }
+
+      .form__group-inner {
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px - 60 * 2 - 100 * 2;
+        min-height: 200px;
+        margin: 0 auto;
+      }
+    }
+
+    &:last-child {
+      .form__group-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      }
+
+      .form__submit {
+        padding: 0;
+        margin: 0;
+        width: 324px;
+      }
+
+      .form__group-tip {
+        display: block;
+        .font-regular(14px);
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__group {
+    &:nth-child(2) {
+      width: 1200px - 120 * 2;
+
+      .form__group-inner {
+        display: flex;
+      }
+
+      .form__group-inner--contacts {
+        justify-content: space-between;
+      }
+    }
+
+    &:nth-child(4) {
+      height: 172px;
+
+      .form__group-inner {
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+  }
 }
