@@ -228,6 +228,11 @@
 */
 @media (min-width: @desktop-screen) {
   .common-section {
+
+    &--big {
+      min-height: 331px;
+    }
+
     &--photo {
       min-height: 287px;
 
@@ -239,5 +244,9 @@
     &--video {
       height: 246px;
     }
+  }
+
+  .common-section.common-section--big .common-section__button{
+    margin: 46px auto;
   }
 }
