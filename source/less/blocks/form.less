@@ -77,6 +77,10 @@
     flex-wrap: wrap;
   }
 
+  .form__group:not(:last-child)::after {
+    content: none;
+  }
+
   .form__group-title {
     .font-bold(21px);
   }
