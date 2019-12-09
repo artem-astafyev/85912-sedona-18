@@ -73,11 +73,12 @@
     border-bottom: 2px solid white;
     border-top: 0;
     .z-index(10);
-    height: 53px;
+    height: 54px;
   }
 
   &:nth-last-child(2) {
     position: relative;
+    border-bottom: 0;
 
     &::after {
       position: absolute;
@@ -206,6 +207,7 @@
 @media (min-width: @desktop-screen) {
   .main-nav__logo img {
     width: 244px;
+    height: 96px;
   }
 
   .main-nav__link {

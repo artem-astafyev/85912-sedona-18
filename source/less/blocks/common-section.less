@@ -25,6 +25,10 @@
 
   &--big {
     height: 286px;
+
+    .common-section__text br {
+      display: none;
+    }
   }
 
   &--photo {
@@ -37,9 +41,9 @@
   }
 
   &--photo .common-section__text {
-    padding-left: 20px;
-    padding-right: 20px;
     line-height: 24px;
+    margin: 0 auto;
+    width: 270px;
   }
 
   &--video {
@@ -111,6 +115,10 @@
 
     &--big {
       min-height: 318px;
+
+      .common-section__text br {
+        display: block;
+      }
     }
 
     &--photo {
@@ -140,7 +148,7 @@
       .common-section__title {
         .font-bold(30px);
         line-height: 26px;
-        padding-top: 68px;
+        padding-top: 67px;
       }
 
       .common-section__text {
@@ -148,6 +156,7 @@
         line-height: 24px;
         width: 415px;
         margin: 0 auto;
+        padding-top: 30px;
       }
 
       &::after {
@@ -160,8 +169,10 @@
 
       .common-section__title {
         .font-bold(30px);
+        padding: 0;
+        margin: 0 auto;
         line-height: 26px;
-        padding-top: 68px;
+        padding-top: 75px;
       }
 
       .common-section__text {
@@ -169,6 +180,8 @@
         line-height: 24px;
         width: 440px;
         margin: 0 auto;
+        padding: 0;
+        padding-top: 30px;
       }
 
       &::after {
@@ -188,19 +201,25 @@
     &--big {
       .font-bold(30px);
       line-height: 26px;
-      padding-top: 57px;
+      padding-top: 56px;
     }
 
     &--big + .common-section__text {
-      padding-top: 40px;
+      margin-top: 30px;
       line-height: 24px;
-      width: 434px;
-      margin: 0 auto;
+      width: 500px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .common-section__button {
     width: 458px;
+  }
+
+  .common-section.common-section--big .common-section__button {
+    margin: 42px auto;
   }
 }
 
@@ -209,16 +228,32 @@
 */
 @media (min-width: @desktop-screen) {
   .common-section {
+    &--big {
+      min-height: 331px;
+    }
+
     &--photo {
       min-height: 287px;
 
       .common-section__title {
         padding-top: 113px;
       }
+
+      .common-section__text {
+        padding-top: 30px;
+      }
     }
 
     &--video {
       height: 246px;
+
+      .common-section__title {
+        padding-top: 72px;
+      }
     }
+  }
+
+  .common-section.common-section--big .common-section__button {
+    margin: 46px auto;
   }
 }
