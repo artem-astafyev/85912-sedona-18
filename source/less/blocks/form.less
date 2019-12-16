@@ -66,6 +66,10 @@
   display: none;
 }
 
+.form__group-title br {
+  display: none;
+}
+
 /**
     tablet
 */
@@ -92,13 +96,31 @@
     padding: 0;
     margin: 0;
 
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 648px / 2;
+      flex-grow: 0;
+    }
+
     &:nth-child(1) {
-      width: 212px;
+      padding-left: 57px;
+      box-sizing: border-box;
 
       .form__group-title {
         padding-top: 9px;
         padding-bottom: 36px;
         text-align: left;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 292px;
+        top: 15px;
+        left: 0;
+        background-color: #e6e6e6;
+        width: 1px;
       }
     }
 
@@ -107,8 +129,8 @@
     }
 
     &:nth-child(3) {
+      position: relative;
       order: -1;
-      width: 648px / 2;
 
       .form__group-title {
         padding-top: 9px;
@@ -121,7 +143,6 @@
       padding-top: 20px;
 
       .form__group-title {
-        width: 320px;
         margin: 0 auto;
       }
 
@@ -139,8 +160,8 @@
     &:nth-child(5) {
       padding-top: 17px;
 
-      .form__group-title {
-        padding-bottom: 41px;
+      .form__textarea {
+        margin-top: 56px;
       }
     }
 
@@ -167,6 +188,45 @@
         margin-left: auto;
       }
     }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5) {
+      .form__group-title {
+        position: relative;
+      }
+
+      .form__group-title::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 1px;
+        top: 38%;
+        left: 0;
+        background-color: #e6e6e6;
+        width: 125px;
+      }
+
+      .form__group-title::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 1px;
+        top: 38%;
+        right: 0;
+        background-color: #e6e6e6;
+        width: 125px;
+      }
+    }
+
+    &:nth-child(4) .form__group-title::before,
+    &:nth-child(4) .form__group-title::after {
+      top: 47%;
+    }
+  }
+
+  .form__group-title br {
+    display: block;
   }
 }
 
