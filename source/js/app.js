@@ -24,4 +24,4 @@ const toggleMenu = function(e){
   });
 }
 
-//window.onload = toggleMenu;
+window.onload = toggleMenu;
