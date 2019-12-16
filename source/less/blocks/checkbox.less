@@ -59,6 +59,26 @@
 */
 @media (min-width: @tablet-screen) {
   .checkbox {
-    width: 220px;
+    padding: 0;
+    width: 258px;
+  }
+}
+
+/**
+    tablet
+*/
+@media (min-width: @desktop-screen) {
+  .checkbox {
+    padding: 0;
+    width: auto;
+  }
+}
+
+/**
+    desktop
+*/
+@media (min-width: @desktop-screen) {
+  .checkbox:last-child .checkbox__checkmark {
+    margin-right: 25px;
   }
 }
