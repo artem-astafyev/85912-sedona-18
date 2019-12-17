@@ -1,55 +1,65 @@
 .photos__list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
 }
 
 .photos__item {
   position: relative;
+
   width: 100%;
 
   &::after {
-    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
+
     display: block;
     width: 100%;
     height: 1px;
+
     background-color: #e6e6e6;
+
+    content: "";
   }
 }
 
 .photos__wrapper {
-  margin: 0 auto;
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
   padding-top: 23px;
+  padding-right: 20px;
   padding-bottom: 23px;
+  padding-left: 20px;
 }
 
 .photos__image {
   display: block;
-  height: 280px;
   width: 280px;
+  height: 280px;
 }
 
 .photos__description {
-  .font-bold(14px);
-  line-height: 24px;
   padding-top: 15px;
+
+  line-height: 24px;
+
+  .font-bold(14px);
 }
 
 .photos__author {
-  .font-regular(14px);
   height: 23px;
+
   line-height: 24px;
-  text-transform: none;
   color: #333333;
+
+  text-transform: none;
+
+  .font-regular(14px);
 }
 
 .photos__like {
@@ -62,20 +72,21 @@
 */
 @media (min-width: @tablet-screen) {
   .photos {
-    padding: 0 60px;
     width: 648px;
     margin: 0 auto;
+    padding: 0 60px;
   }
 
   .photos__list {
     display: flex;
+
     flex-flow: row wrap;
   }
 
   .photos__wrapper {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
   }
 
   .photos__item {
@@ -113,13 +124,15 @@
   }
 
   .photos__content {
-    height: 80px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: #f2f2f2;
-    padding-left: 20px;
+    height: 80px;
     padding-right: 20px;
+    padding-left: 20px;
+
+    background: #f2f2f2;
+
+    align-items: center;
+    justify-content: flex-start;
 
     .photos__like,
     .photos__description,
@@ -150,8 +163,8 @@
 @media (min-width: @desktop-screen) {
   .photos {
     width: 1200px;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
   }
 
   .photos__item {
@@ -186,9 +199,11 @@
 
   .photos__content {
     position: absolute;
-    width: calc(100% - 40px);
     bottom: 0;
+
+    width: calc(100% - 40px);
     height: 80px;
+
     background: rgba(0, 0, 0, 0.6);
 
     .photos__like,
@@ -199,8 +214,9 @@
 
     .photos__like {
       svg {
-        .svg-fill(white);
         opacity: 1;
+
+        .svg-fill(white);
       }
 
       .like__count {

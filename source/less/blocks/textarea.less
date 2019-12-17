@@ -1,22 +1,28 @@
 .textarea {
   display: block;
-  min-height: 160px;
-  border: 0;
   width: 100%;
-  background: #f2f2f2;
+  margin-top: 16px;
   padding-top: 16px;
-  padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  margin-top: 16px;
-  outline: none;
+  padding-left: 20px;
+
   color: black;
-  .font-bold();
+
+  background: #f2f2f2;
+  border: 0;
+
   overflow: hidden;
   box-sizing: border-box;
+  min-height: 160px;
+
+  outline: none;
+
+  .font-bold();
 
   &::placeholder {
     color: black;
+
     opacity: 1;
   }
 }
