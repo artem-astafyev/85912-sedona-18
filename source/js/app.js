@@ -1,5 +1,3 @@
-console.log('hi there');
-
 const toggleMenu = function(e){
   const mainNav = document.querySelector(".main-nav");
   const bntOpen = document.querySelector(".main-nav__menu-button");
