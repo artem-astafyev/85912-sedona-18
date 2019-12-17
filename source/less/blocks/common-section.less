@@ -19,12 +19,12 @@
 .common-section {
   position: relative;
   background: white;
-  height: 202px;
+  min-height: 202px;
   text-align: center;
   box-sizing: border-box;
 
   &--big {
-    height: 286px;
+    min-height: 286px;
 
     .common-section__text br {
       display: none;
@@ -32,7 +32,7 @@
   }
 
   &--photo {
-    height: 190px;
+    min-height: 190px;
     .pseudo-underline();
   }
 
@@ -47,7 +47,7 @@
   }
 
   &--video {
-    height: 192px;
+    min-height: 192px;
 
     .common-section__title {
       padding-top: 32px;
@@ -59,7 +59,7 @@
   }
 
   &--form {
-    height: 203px;
+    min-height: 203px;
   }
 
   &--form .common-section__title {
@@ -245,7 +245,7 @@
     }
 
     &--video {
-      height: 246px;
+      min-height: 246px;
 
       .common-section__title {
         padding-top: 72px;

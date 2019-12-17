@@ -34,7 +34,7 @@
 @reasons-content-height: 212px - @m-top - @m-bottom - 20;
 
 .reasons__content {
-  height: @reasons-content-height;
+  min-height: @reasons-content-height;
   margin-top: @m-top;
   margin-right: 27px;
   margin-bottom: @m-bottom;
@@ -43,7 +43,7 @@
 }
 
 .reasons__item:nth-child(2) .reasons__content {
-  height: @reasons-content-height - 1;
+  min-height: @reasons-content-height - 1;
 }
 
 .reasons__title {
@@ -159,7 +159,7 @@
 
     &--grey {
       width: 256px;
-      height: 256px;
+      min-height: 256px;
       flex-grow: 1;
 
       .reasons__inner {
