@@ -32,6 +32,28 @@ const toggleMenu = function (e) {
   failButton.addEventListener("click", function () {
     failPopup.classList.add("display-none");
   });
+
+  window.validate = function () {
+
+    const inputs = document.querySelectorAll("input[pattern]");
+
+    for (let i = 0; i < inputs.length; i++) {
+
+      const input = inputs[i];
+      const pattern = input.getAttribute('pattern');
+
+      var regEx = new RegExp(pattern);
+
+      if (regEx.test(input.value) !== true) {
+        console.log(pattern);
+        failPopup.classList.remove('display-none');
+        return false;
+      }
+    }
+
+    successPopup.classList.remove('display-none');
+    return false;
+  }
 }
 
 window.onload = toggleMenu;
