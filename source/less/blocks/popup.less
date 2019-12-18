@@ -18,6 +18,8 @@
   background: white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
+  animation: bounce 0.6s;
+
   .popup__title {
     .font-bold(18px);
     line-height: 26px;
@@ -145,5 +147,23 @@
         height: 146px;
       }
     }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
   }
 }
