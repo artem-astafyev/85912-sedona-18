@@ -21,11 +21,15 @@
   .popup__title {
     .font-bold(18px);
     line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
   }
 
   .popup__text {
     .font-regular(14px);
     line-height: 24px;
+    color: #333333;
   }
 
   .popup__content {
@@ -92,6 +96,54 @@
 
     .popup__button {
       width: 280px;
+    }
+  }
+}
+
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .popup {
+    .popup__title {
+      .font-bold(30px);
+      line-height: 40px;
+    }
+
+    .popup__text {
+      .font-regular(14px);
+      line-height: 24px;
+    }
+
+    &--fail {
+      .set-size(400px, 347px);
+
+      .popup__title {
+
+        width: 240px;
+      }
+
+      .popup__content {
+        margin-top: 60px;
+        width: 277px;
+      }
+
+      .popup__button-wrapper {
+        padding-top: 30px;
+      }
+    }
+
+    &--success {
+      .set-size(640px, 347px);
+
+      .popup__content {
+        width: 414px;
+      }
+
+      .popup__button-wrapper {
+        height: 146px;
+      }
     }
   }
 }
