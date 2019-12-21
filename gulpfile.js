@@ -59,9 +59,9 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    // .pipe(posthtml([
-    //   include()
-    // ]))
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(gulp.dest("build"));
 });
 
@@ -100,5 +100,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
