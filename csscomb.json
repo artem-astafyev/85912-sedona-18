@@ -12,8 +12,9 @@
       "right",
       "bottom",
       "left",
-      "z-index",
-
+      "z-index"
+    ],
+    [
       "display",
       "float",
       "width",
@@ -27,8 +28,9 @@
       "padding-top",
       "padding-right",
       "padding-bottom",
-      "padding-left",
-
+      "padding-left"
+    ],
+    [
       "font",
       "font-family",
       "font-size",
@@ -44,8 +46,9 @@
       "font-smooth",
       "line-height",
       "text-align",
-      "color",
-
+      "color"
+    ],
+    [
       "background",
       "background-color",
       "background-image",
@@ -123,8 +126,9 @@
       "-moz-border-image-repeat",
       "-o-border-image-repeat",
       "border-image-repeat",
-      "opacity",
-
+      "opacity"
+    ],
+    [
       "-webkit-transition",
       "-moz-transition",
       "-ms-transition",
@@ -199,8 +203,9 @@
       "-moz-animation-direction",
       "-ms-animation-direction",
       "-o-animation-direction",
-      "animation-direction",
-
+      "animation-direction"
+    ],
+    [
       "visibility",
       "clear",
       "overflow",
@@ -327,15 +332,17 @@
       "pointer-events",
       "filter:progid:DXImageTransform.Microsoft.Alpha(Opacity",
       "-ms-filter:\\'progid:DXImageTransform.Microsoft.Alpha",
-      "-ms-interpolation-mode",
-
+      "-ms-interpolation-mode"
+    ],
+    [
       "outline",
       "outline-width",
       "outline-style",
       "outline-color",
       "outline-offset",
-      "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader",
-
+      "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+    ],
+    [
       "box-decoration-break",
       "-webkit-box-shadow",
       "-moz-box-shadow",

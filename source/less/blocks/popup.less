@@ -1,0 +1,178 @@
+.set-size(@width, @height) {
+  width: @width;
+  height: @height;
+  margin-top: -@height / 2;
+  margin-left: -@width / 2;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+
+  background: white;
+
+  animation: bounce 0.6s;
+
+  min-width: 320px;
+  min-height: 280px;
+
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  .popup__title {
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: bold;
+    line-height: 26px;
+
+    .font-bold(18px);
+  }
+
+  .popup__text {
+    line-height: 24px;
+    color: #333333;
+
+    .font-regular(14px);
+  }
+
+  .popup__content {
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+  }
+
+  .popup__button-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .popup__button {
+    border: none;
+
+    text-transform: uppercase;
+  }
+
+  &--fail {
+    .set-size(320px, 280px);
+
+    .popup__text {
+      padding-top: 30px;
+    }
+
+    .popup__content {
+      width: 207px;
+      margin-top: 46px;
+    }
+
+    .popup__button-wrapper {
+      padding-top: 20px;
+    }
+
+    .popup__button {
+      width: 180px;
+    }
+  }
+
+  &--success {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    .set-size(320px, 323px);
+
+    .popup__text {
+      padding-top: 30px;
+    }
+
+    .popup__content {
+      width: 214px;
+      margin-top: 49px;
+    }
+
+    .popup__button-wrapper {
+      display: flex;
+      width: 100%;
+      height: 98px;
+
+      background-color: #f2f2f2;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    .popup__button {
+      width: 280px;
+    }
+  }
+}
+
+
+/**
+    tablet
+*/
+@media (min-width: @tablet-screen) {
+  .popup {
+    .popup__title {
+      line-height: 40px;
+
+      .font-bold(30px);
+    }
+
+    .popup__text {
+      line-height: 24px;
+
+      .font-regular(14px);
+    }
+
+    &--fail {
+      .set-size(400px, 347px);
+
+      .popup__title {
+        width: 240px;
+      }
+
+      .popup__content {
+        width: 277px;
+        margin-top: 60px;
+      }
+
+      .popup__button-wrapper {
+        padding-top: 30px;
+      }
+    }
+
+    &--success {
+      .set-size(640px, 347px);
+
+      .popup__content {
+        width: 414px;
+      }
+
+      .popup__button-wrapper {
+        height: 146px;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

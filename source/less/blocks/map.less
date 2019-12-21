@@ -4,15 +4,17 @@
 
 .map__wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 320px;
   height: 350px;
   margin: 0 auto;
+
   background-image: url("../img/bg-map-mobile@1x.jpg");
-  background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: 320px 350px;
+
+  align-items: center;
+  justify-content: center;
 
   @media (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -22,12 +24,13 @@
 @marker-size: 27px;
 
 .map__marker {
-  background: url("../img/icon-map-marker.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: @marker-size @marker-size;
   width: @marker-size;
   height: @marker-size;
+
+  background: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: @marker-size @marker-size;
 }
 
 /**
@@ -36,6 +39,7 @@
 @media (min-width: @tablet-screen) {
   .map__wrapper {
     width: 768px;
+
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-size: 768px 350px;
 
@@ -51,6 +55,7 @@
 @media (min-width: @desktop-screen) {
   .map__wrapper {
     width: 1200px;
+
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-size: 1200px 350px;
 
