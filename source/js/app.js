@@ -23,13 +23,13 @@ const toggleMenu = function (e) {
 
   const successPopup = document.querySelector(".popup--success");
   const successButton = document.getElementById("successButton");
-  successButton.addEventListener("click", function () {
+  successButton && successButton.addEventListener("click", function () {
     successPopup.classList.add("display-none");
   });
 
   const failPopup = document.querySelector(".popup--fail");
   const failButton = document.getElementById("failButton");
-  failButton.addEventListener("click", function () {
+  failButton && failButton.addEventListener("click", function () {
     failPopup.classList.add("display-none");
   });
 
